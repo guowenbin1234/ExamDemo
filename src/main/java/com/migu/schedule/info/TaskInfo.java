@@ -10,19 +10,34 @@ public class TaskInfo
 {
     private int taskId;
     private int nodeId;
-    public int getNodeId()
-    {
+    private int consumption;
+    private int status;
+
+    public int getNodeId(){
         return nodeId;
     }
-    public int getTaskId(){  return taskId; }
-    public void setNodeId(int nodeId)
-    {
+    public int getTaskId(){
+        return taskId;
+    }
+    public int getConsumption(){
+        return consumption;
+    }
+    public int getStatus(){
+        return status;
+    }
+    public void setNodeId(int nodeId){
         this.nodeId = nodeId;
     }
-    public void setTaskId(int taskId)
-    {
+    public void setTaskId(int taskId){
         this.taskId = taskId;
     }
+    public void setConsumption(int consumption){
+        this.consumption = consumption;
+    }
+    public void setStatus(int consumption){
+        this.status = status;
+    }
+
     @Override
     public String toString()
     {
